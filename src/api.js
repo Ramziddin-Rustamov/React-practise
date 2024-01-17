@@ -13,5 +13,10 @@ const getFilterCategory = async (categoryFilterByName) => {
     const response = await fetch(API_URL + 'filter.php?c=' + categoryFilterByName);
     return await response.json();
 }
+// Lookup full meal details by id
+const detailsById = async (productId)=>{
+    const response = await fetch(API_URL + 'lookup.php?i=' + productId);
+    return await response.json();
+}
 
-export {getMealById, getAllCategories , getFilterCategory};
+export {getMealById, getAllCategories , getFilterCategory , detailsById};
