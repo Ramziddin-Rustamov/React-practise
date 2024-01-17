@@ -22,6 +22,7 @@ function CategoryItem(props){
             </p>
             </div>
             <div className="card-actions">
+                {/* Link to other pages indide html file */}
                 <Link to={`/category/${idCategory}`} className="btn btn-outline-primary py-2 my-1 mx-1">
                     Read 
                 </Link>
